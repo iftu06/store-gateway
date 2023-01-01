@@ -1,0 +1,30 @@
+server:
+  port : 8066
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: merchant
+#          uri: http://localhost:8095/
+#          predicates:
+#            - Path=/webstore/**
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: merchant
+#          uri: http://localhost:8095/
+#          predicates:
+#            - Path=/webstore/**
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: merchant
+          uri: http://localhost:8095
+          predicates:
+            - Path=/webstore/**
+
